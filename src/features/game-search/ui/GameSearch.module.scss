@@ -1,0 +1,73 @@
+@use 'app/styles/variables' as *;
+
+.search {
+  display: flex;
+  width: 100%;
+  padding: 9px 20px;
+  background-color: $color-card-alt;
+  border-radius: $radius;
+}
+
+.row {
+  display: flex;
+  flex: 1 0 0;
+  gap: 10px;
+  align-items: flex-end;
+  min-width: 0;
+}
+
+.field {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  height: $control-height;
+  padding: 10px 20px 10px 15px;
+  border: 1px solid $color-stroke;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: $color-text;
+}
+
+.input {
+  flex: 1 0 0;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: $color-text;
+  background: none;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    color: $color-text-muted;
+  }
+}
+
+.button {
+  flex-shrink: 0;
+  height: $control-height;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $color-text-inverse;
+  text-transform: uppercase;
+  background-color: $color-accent;
+}
