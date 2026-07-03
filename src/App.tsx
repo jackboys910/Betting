@@ -1,5 +1,7 @@
+import { AppProvider } from '@/app/providers/AppProvider'
+
 function App() {
-  return <div>Games</div>
+  return <AppProvider />
 }
 
 export default App

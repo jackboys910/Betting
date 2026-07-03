@@ -1,0 +1,6 @@
+@use 'app/styles/variables' as *;
+
+.page {
+  min-height: 100vh;
+  background-color: $color-bg;
+}
