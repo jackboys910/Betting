@@ -7,6 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:styles": "stylelint \"src/**/*.scss\"",
+    "format": "prettier --write .",
+    "type-check": "tsc -b",
     "preview": "vite preview"
   },
   "dependencies": {
